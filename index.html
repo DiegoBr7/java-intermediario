@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="01">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +7,23 @@
 
 <script>
 
-function h1click(){
-console.log("executando a função")
+function changeH1() {
+
+let h1 =document.getElementsByName("h1")[0]
+console.log(h1)
+
+
 }
 
-</script>
+</script> 
 
 </head>
 <body>
 
 
-    <h1 onclick="h1click()">Click em MIM</h1>
+    <h1>Click em MIM</h1>
+
+    <input id="texto" type="text" onchange="changeH1()">
 
 
 </body>
