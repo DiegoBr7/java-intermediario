@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+   function onOver(elemento){
+
+       elemento.style.backgroundColor = "red"
+   }
+
+function onOut(elemento){
+
+    elemento.style.backgroundColor ="cornflowerblue"
+
+}
+
+    </script>
+
+<style>
+
+img {
+width: 200px;
+margin-bottom: 25px ;
+}
+
+div {
+display:inline;
+padding: 10 px;
+font-size:2rem ;
+background-color: cornflowerblue;
+color: white;
+
+}
+
+</style>
+
+</head>
+
+<body onload="console.log('pagina completamente carregada')">
+    <img src="https://i.pinimg.com/236x/45/2a/9d/452a9dce9c97918233e4c2de6476ed8e.jpg" alt="">
+    <br>
+    <div onmouseover="onOver(this)"
+        onmouseout="onOut(this)">Click</div>
+        <p onmouseover="onOver(this)"
+        onmouseout="onOut(this)">ABABABABABABABAB</p>
+
+
+</body>
+</html>
