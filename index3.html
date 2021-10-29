@@ -14,20 +14,25 @@
 
 <script>
 
-function f(e){
-    console.log("teste")
-    console.log(e)
-}
-function f1(e){
-    console.log("teste f1")
-    console.log(e)
+    window.onload = function(){
+
+   let h1 = document.getElementsByTagName("h1")
+       
+  for(let h of h1){
+  console.log(h)
+
+  h.addEventListener("click" , qop)
+
+  }
+
+function qop(e){
+
+let t = e.target
+console.log(t.parentElement)
+
 }
 
-window.onload = function(){
-    let h1 = document.getElementsByTagName("h1")[0]
-
-    h1.addEventListener("click", f1())
-}
+    }
 
 </script>
 
@@ -36,7 +41,11 @@ window.onload = function(){
 </head>
 <body>
 
-<h1 onclick="f()">Title</h1>
+    <div id="d1">
+     <h1>Titulo</h1>
+     <p>qualquer texto</p>
+
+    </div>
 
 </body>
 
