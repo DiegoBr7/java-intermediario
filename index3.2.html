@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html id="01">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>titulo</title>
+
+<style>
+
+
+</style>
+
+
+
+<script>
+
+var n = 0;
+
+function atualizarTexto(){
+
+    let h =document.getElementsByTagName("h1")[0]
+    h.innerHTML += "" + n ;
+    n++
+}
+
+function mudarTexto(){
+
+
+setInterval( atualizarTexto, 3000)
+
+}
+
+</script>
+
+
+
+</head>
+<body>
+
+
+</body>
+
+<h1>Título</h1>
+
+<input onclick="mudarTexto()" type="submit" value="mudar">
+
+</body>
+</html>
